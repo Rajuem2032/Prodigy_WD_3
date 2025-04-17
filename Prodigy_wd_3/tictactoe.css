@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color: rgb(35, 0, 29);
+    height: 50px;
+    color: aliceblue;
+    line-height: 50px;
+    padding-left: 5vw;
+    font-size: large;
+    font-family: "Dancing Script", cursive;
+}
+.btn{
+    border: 2px solid rgb(98, 21, 98);
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: x-large;
+    color: black;
+    width: 100px;
+    height: 100px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+    margin-top: 3vw;
+    position: relative;
+}
+#btn1, #btn4, #btn7{
+    border-left: 0;
+}
+#btn1, #btn2, #btn3{
+    border-top: 0;
+}
+#btn3, #btn6, #btn9{
+    border-right: 0;
+}
+#btn7, #btn8, #btn9{
+    border-bottom: 0;
+}
+.hidden{
+    display: none;
+    
+}
+.winmark{
+    text-decoration: line-through;    
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+}
+.start button{
+    width: 95px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 20%;
+    font-weight: bold;
+    background-color: transparent;
+}
+.btn.active:hover{
+    background-color: rgb(195, 163, 225);
+}
+#startbtn{
+    background-color:green;
+    color: aliceblue;
+}
+
+
+footer span{
+   display: flex;
+   justify-content: center;
+   margin-top: 3vw;
+   color: rgb(14, 14, 86);
+}
+
+.line{
+    position: absolute;
+    background-color:red;
+    height: 3px;
+    width: 0;
+    left: 41vw;
+    transition: width 1s ease-in-out;
+}
+main{
+    position: relative;
+}
+#winjoy img{
+    position: absolute;
+    height: 17vw;
+    left: 3vw;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.declarewin{
+    position: absolute;
+    bottom: 0;
+    left: 10vw;
+    color: rgb(15, 6, 122);
+    font-weight: bold;
+    font-size: x-large;
+    visibility: hidden;
+}
+.celeb{
+    position: absolute;
+    left:23vw;
+    bottom: 0;
+    height:40vw;                                  
+    width: 50%;
+    visibility: hidden;
+}
